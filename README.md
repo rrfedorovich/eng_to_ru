@@ -162,5 +162,3 @@ translated_text = translator.run(text: str, description: str = "Перевод..
 ## Лицензия
 
 Проект распространяется под лицензией MIT. Подробности см. в файле [LICENSE](LICENSE).
-
----
