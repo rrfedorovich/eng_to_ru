@@ -72,10 +72,10 @@ from eng_to_ru import Translator
 
 translator = Translator(batch_size=10)
 with open("large_text.txt", "r", encoding="utf-8") as f:
-	text = f.read()
+    text = f.read()
 translated = translator.run(text, description="Перевод большой статьи...")
 with open("translated.txt", "w", encoding="utf-8") as f:
-	f.write(translated)
+    f.write(translated)
 ```
 
 ### Пример 3: Перевод с обработкой ошибок
@@ -85,20 +85,20 @@ from my_translator import Translator
 
 translator = Translator()
 try:
-	translated_text = translator.run("Hello, world!")
-	if translated_text is None:
-		print("Ошибка перевода.")
-	else:
-		print(translated_text)
+    translated_text = translator.run("Hello, world!")
+    if translated_text is None:
+        print("Ошибка перевода.")
+    else:
+        print(translated_text)
 except Exception as e:
-	print(f"Произошла ошибка: {e}")
+    print(f"Произошла ошибка: {e}")
 ```
 
 ---
 
 ## Логирование
 
-Библиотека использует модуль logging для вывода информации о процессе перевода. 
+Библиотека использует модуль logging для вывода информации о процессе перевода.
 
 Пример настройки логирования:
 
@@ -150,7 +150,6 @@ translated_text = translator.run(text: str, description: str = "Перевод..
 
 Возвращает:
 Переведённый текст (str) или None, если произошла ошибка.
-
 
 Логика работы:
 
