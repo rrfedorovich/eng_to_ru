@@ -1,0 +1,1 @@
+from .eng_to_ru import Translator
